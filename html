@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reward Spinner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ramddom Lucky</h1>
+            <div class="input-group">
+                <label for="location">ບໍລິການ</label>
+                <input type="text" id="location" value="Muanlai">
+            </div>
+            <div class="input-group">
+                <label for="date">ປະຈຳເດືອນ</label>
+                <input type="text" id="date" value="07-2024">
+            </div>
+        </div>
+        <div class="spinner-section">
+            <div class="rewards">
+                <button class="reward">U-Money ມູນຄ່າ 3,000,000 ກີບ</button>
+                <button class="reward">U-Money ມູນຄ່າ 700,000 ກີບ</button>
+                <button class="reward">U-Money ມູນຄ່າ 300,000 ກີບ</button>
+            </div>
+            <div class="display">
+                <div class="number" id="number-display">2095012057</div>
+            </div>
+            <button class="spin-btn" id="spin-btn">SPIN</button>
+        </div>
+        <div class="winner-list">
+            <h2>Winner List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Reward</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody id="winner-list-body">
+                    <tr>
+                        <td>1</td>
+                        <td>U-Money ມູນຄ່າ 200,000 ກີບ</td>
+                        <td>2095012057</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
